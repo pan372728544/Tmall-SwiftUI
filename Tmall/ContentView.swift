@@ -10,7 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       TMTabBarView([TMTabMainView(.home),TMTabMainView(.cat),TMTabMainView(.store),TMTabMainView(.me)], tabbars: tabBarData)
+       
+        ZStack {
+            colorTM
+                     .frame(height: 200)
+                     
+            
+        }
     }
 }
 

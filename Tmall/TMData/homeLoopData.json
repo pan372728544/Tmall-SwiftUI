@@ -1,0 +1,53 @@
+[
+    {
+        "imgName": "loop1",
+        "id": 1,
+        "bgColor": "#C0C0C0"
+    },
+    {
+        "imgName": "loop2",
+        "id": 2,
+        "bgColor": "#000000"
+    },
+    {
+        "imgName": "loop3",
+        "id": 3,
+        "bgColor": "#FEEEEA"
+    },
+    {
+        "imgName": "loop4",
+        "id": 4,
+        "bgColor": "#A9A7B2"
+    },
+    {
+        "imgName": "loop5",
+        "id": 5,
+        "bgColor": "#DAFFF8"
+    },
+    {
+        "imgName": "loop6",
+        "id": 6,
+        "bgColor": "#E9E1FF"
+    },
+    {
+        "imgName": "loop7",
+        "id": 7,
+        "bgColor": "#52EAAF"
+    },
+    {
+        "imgName": "loop8",
+        "id": 8,
+        "bgColor": "#A4EABD"
+    },
+    {
+        "imgName": "loop9",
+        "id": 9,
+        "bgColor": "#FFC84D"
+    },
+    {
+        "imgName": "loop10",
+        "id": 10,
+        "bgColor": "#69C84E"
+    }
+]
+

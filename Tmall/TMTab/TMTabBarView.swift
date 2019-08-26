@@ -12,7 +12,7 @@ struct TMTabBarView<T: View>: View {
     /// 自控制器数组
     var viewControllers: [UIHostingController<T>]
     /// 当前选中的索引
-    @State var selectedIndex = 2
+    @State var selectedIndex = 0
     
     /// 数组
     var tabbarDatas: [TabBarItem]
@@ -24,12 +24,12 @@ struct TMTabBarView<T: View>: View {
     }
     
     var body: some View {
-        VStack {
-            Text("当前选中的是 ： \(selectedIndex)")
-            
+//        VStack {
+//            Text("当前选中的是 ： \(selectedIndex)")
+//
             /// 显示Tabbar
             TMTabBarViewController(childControlls: viewControllers, tabbarDatas: tabbarDatas, selectedIndex: $selectedIndex).edgesIgnoringSafeArea(.all)
-        }
+//        }
 
     }
 }

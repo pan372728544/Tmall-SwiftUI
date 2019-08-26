@@ -1,0 +1,54 @@
+[
+    {
+        "category": "免费领好礼",
+        "imageName": "nongchang",
+        "id": 1
+    },
+    {
+        "category": "天猫超市",
+        "imageName": "category2",
+        "id": 2
+    },
+    {
+        "category": "天猫国际",
+        "imageName": "jinkou",
+        "id": 3
+    },
+    {
+        "category": "聚划算",
+        "imageName": "huasuan",
+        "id": 4
+    },
+    {
+        "category": "分类",
+        "imageName": "fenlei",
+        "id": 5
+    },
+    {
+        "category": "苏宁易购",
+        "imageName": "category6",
+        "id": 6
+    },
+    {
+        "category": "饿了吗",
+        "imageName": "waimai",
+        "id": 7
+    },
+    {
+        "category": "飞猪",
+        "imageName": "category8",
+        "id": 8
+    },
+    {
+        "category": "大麦",
+        "imageName": "yanchu",
+        "id": 9
+    },
+    {
+        "category": "淘票票",
+        "imageName": "dianying",
+        "id": 10
+    }
+    
+]
+
