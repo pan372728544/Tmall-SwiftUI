@@ -11,12 +11,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
        
-        ZStack {
-            colorTM
-                     .frame(height: 200)
-                     
-            
-        }
+         GeometryReader { geometry in
+                  HStack(spacing: 10) {
+                      Text("Left")
+                          .frame(width: geometry.size.width / 2, height: 50)
+                          .background(Color.yellow)
+                      Text("Right")
+                          .frame(width: geometry.size.width / 2, height: 50)
+                          .background(Color.orange)
+                  }
+              }
     }
 }
 

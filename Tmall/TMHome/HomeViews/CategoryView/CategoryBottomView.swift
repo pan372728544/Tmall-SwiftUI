@@ -24,9 +24,6 @@ struct CategoryBottomView: View {
                     
                 }
             }
-
-           
-    
     }
 }
 

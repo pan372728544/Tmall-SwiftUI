@@ -68,5 +68,22 @@ struct CategoryBottomItem: Hashable, Codable, Identifiable {
 
 }
 
+struct MemberStoreBottomItem: Hashable, Codable, Identifiable {
+    
+    var id: Int
+    
+    var imageName: String
+    
+    var category: String
+    
+    var featureImage: Image? {
+            return Image(
+                ImageStore.loadImage(name: imageName),
+                scale: 2,
+                label: Text(verbatim: imageName))
+        }
+}
+
+
 
 

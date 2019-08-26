@@ -21,11 +21,18 @@ struct TMHomeView: View {
             /// 滚动视图
             ScrollView(.vertical, showsIndicators: false) {
                 
-                VStack(alignment: .trailing, spacing: 10) {
+                VStack(alignment: .trailing, spacing: 0) {
                     /// 轮播图
                     PageView(loopData.map { LoopCardView(loop: $0) })
-                    /// 分类
-                    CategoryView()
+                    
+                    ZStack (alignment: .top) {
+                        /// 分类
+                        CategoryView()
+                        
+                        /// 天猫会员店
+                        MemberStoreView().padding(.top,148)
+                    }
+                  
                 }
                 .edgesIgnoringSafeArea(.all)
                 .offset(x: 0, y: -320)
