@@ -31,8 +31,11 @@ struct TMHomeView: View {
                         
                         /// 天猫会员店
                         MemberStoreView().padding(.top,148)
+                        
+                        /// 限时抢购
+                        FlashSaleView().padding(.top,310)
                     }
-                  
+      
                 }
                 .edgesIgnoringSafeArea(.all)
                 .offset(x: 0, y: -320)
