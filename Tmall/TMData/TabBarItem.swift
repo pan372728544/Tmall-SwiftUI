@@ -104,3 +104,29 @@ struct BestSaleItem: Hashable, Codable, Identifiable {
         }
 }
 
+
+struct ThemeChoiceItem: Hashable, Codable, Identifiable {
+    
+    var id: Int
+    
+    var title: String
+    
+    var detail: String
+    
+    var productList: [ThemeChoiceProductList]
+        
+
+}
+
+struct ThemeChoiceProductList: Hashable, Codable {
+ 
+    
+    var imageName: String
+    
+    var productName: String
+    
+    var colorTitle: String
+    
+    var colorBg: String
+    
+}

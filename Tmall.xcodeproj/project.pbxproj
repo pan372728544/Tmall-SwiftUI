@@ -101,6 +101,8 @@
 		38D4FF642314D2DE005AFE7A /* HotSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF632314D2DE005AFE7A /* HotSearchView.swift */; };
 		38D4FF662314D5CD005AFE7A /* HotSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF652314D5CD005AFE7A /* HotSearchCell.swift */; };
 		38D4FF692314DB51005AFE7A /* ThemeChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF682314DB51005AFE7A /* ThemeChoiceView.swift */; };
+		38D4FF6D2314DF8D005AFE7A /* ThemeChoiceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 38D4FF6C2314DF8D005AFE7A /* ThemeChoiceData.json */; };
+		38D4FF6F2314F922005AFE7A /* ThemeChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF6E2314F922005AFE7A /* ThemeChoiceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,6 +203,8 @@
 		38D4FF632314D2DE005AFE7A /* HotSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSearchView.swift; sourceTree = "<group>"; };
 		38D4FF652314D5CD005AFE7A /* HotSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotSearchCell.swift; sourceTree = "<group>"; };
 		38D4FF682314DB51005AFE7A /* ThemeChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChoiceView.swift; sourceTree = "<group>"; };
+		38D4FF6C2314DF8D005AFE7A /* ThemeChoiceData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ThemeChoiceData.json; sourceTree = "<group>"; };
+		38D4FF6E2314F922005AFE7A /* ThemeChoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChoiceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +295,7 @@
 				38C06DF22313C5CC009A0CF3 /* CategoryBottomData.json */,
 				38C06DF92313D12E009A0CF3 /* MemberStoreData.json */,
 				38D4FF602314CAF3005AFE7A /* BestSaleData.json */,
+				38D4FF6C2314DF8D005AFE7A /* ThemeChoiceData.json */,
 			);
 			path = TMData;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 			isa = PBXGroup;
 			children = (
 				38D4FF682314DB51005AFE7A /* ThemeChoiceView.swift */,
+				38D4FF6E2314F922005AFE7A /* ThemeChoiceCell.swift */,
 			);
 			path = ThemeChoice;
 			sourceTree = "<group>";
@@ -542,6 +548,7 @@
 				38D4FF5D2314CAAD005AFE7A /* best03.jpg in Resources */,
 				38D4FF4A2313E496005AFE7A /* 01.jpg in Resources */,
 				38D4FF482313E496005AFE7A /* 04.jpg in Resources */,
+				38D4FF6D2314DF8D005AFE7A /* ThemeChoiceData.json in Resources */,
 				38D4FF492313E496005AFE7A /* 11.jpg in Resources */,
 				38C06DCE23138055009A0CF3 /* loop6.jpg in Resources */,
 				38C06DC823138055009A0CF3 /* O1CN01SVaVkM1vIHuvUFihZ_!!2-item_pic.png in Resources */,
@@ -602,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38C06DF82313D0E0009A0CF3 /* MemberStoreBottomView.swift in Sources */,
+				38D4FF6F2314F922005AFE7A /* ThemeChoiceCell.swift in Sources */,
 				38C06DF52313C978009A0CF3 /* MemberStoreView.swift in Sources */,
 				38C06D6B230FC0DE009A0CF3 /* Data.swift in Sources */,
 				38C06DEF2313C567009A0CF3 /* CategoryBottomView.swift in Sources */,

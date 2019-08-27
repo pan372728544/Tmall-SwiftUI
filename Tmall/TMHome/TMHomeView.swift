@@ -25,8 +25,6 @@ struct TMHomeView: View {
                     /// 轮播图
                     PageView(loopData.map { LoopCardView(loop: $0) })
                     
-                    /// 使用叠加
-//                    ZStack (alignment: .top) {
                     /// 分类
                     CategoryView().padding(.top,10)
                     
@@ -41,8 +39,14 @@ struct TMHomeView: View {
                     
                     
                     /// 热搜榜
-                    HotSearchView().padding(.top,0)
-//                    }
+                    HotSearchView()
+                    
+                    /// 主题精选
+                    ThemeChoiceView()
+                    
+                    
+                    /// 猜你喜欢
+
       
                 }
                 .edgesIgnoringSafeArea(.all)
