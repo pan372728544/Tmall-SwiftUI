@@ -11,14 +11,15 @@ import SwiftUI
 struct ContentView: View {
     @State private var showGreeting = true
 
-       var body: some View {
-           VStack {
-               Toggle(isOn: $showGreeting) {
-                   Text("Show welcome message")
-               }.padding()
-
-               if showGreeting {
-                   Text("Hello World!")
+      var body: some View {
+           GeometryReader { geometry in
+               HStack(spacing: 0) {
+                   Text("Left")
+                       .frame(width: geometry.size.width / 2, height: 50)
+                       .background(Color.yellow)
+                   Text("Right")
+                       .frame(width: geometry.size.width / 2, height: 50)
+                       .background(Color.orange)
                }
            }
        }

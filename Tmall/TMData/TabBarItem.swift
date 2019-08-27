@@ -130,3 +130,25 @@ struct ThemeChoiceProductList: Hashable, Codable {
     var colorBg: String
     
 }
+
+struct RecommendItem: Hashable, Codable
+{
+
+    var productList: [RecommendProductList]
+}
+
+struct RecommendProductList: Hashable, Codable {
+ 
+    
+    var imageName: String
+    
+    var productName: String
+    
+    var price: String
+
+    
+}
+
+
+
+

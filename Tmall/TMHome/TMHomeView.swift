@@ -37,16 +37,15 @@ struct TMHomeView: View {
                     /// 天猫榜单
                     BestSaleView().padding(.top,-10)
                     
-                    
                     /// 热搜榜
                     HotSearchView()
                     
                     /// 主题精选
                     ThemeChoiceView()
                     
-                    
                     /// 猜你喜欢
-
+                    RecommendView()
+            
       
                 }
                 .edgesIgnoringSafeArea(.all)

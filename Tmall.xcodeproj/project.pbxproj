@@ -103,6 +103,9 @@
 		38D4FF692314DB51005AFE7A /* ThemeChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF682314DB51005AFE7A /* ThemeChoiceView.swift */; };
 		38D4FF6D2314DF8D005AFE7A /* ThemeChoiceData.json in Resources */ = {isa = PBXBuildFile; fileRef = 38D4FF6C2314DF8D005AFE7A /* ThemeChoiceData.json */; };
 		38D4FF6F2314F922005AFE7A /* ThemeChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF6E2314F922005AFE7A /* ThemeChoiceCell.swift */; };
+		38D4FF72231508E7005AFE7A /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF71231508E7005AFE7A /* RecommendView.swift */; };
+		38D4FF742315096F005AFE7A /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF732315096F005AFE7A /* RecommendCell.swift */; };
+		38D4FF7823150A6A005AFE7A /* RecommendData.json in Resources */ = {isa = PBXBuildFile; fileRef = 38D4FF7723150A6A005AFE7A /* RecommendData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -205,6 +208,9 @@
 		38D4FF682314DB51005AFE7A /* ThemeChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChoiceView.swift; sourceTree = "<group>"; };
 		38D4FF6C2314DF8D005AFE7A /* ThemeChoiceData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ThemeChoiceData.json; sourceTree = "<group>"; };
 		38D4FF6E2314F922005AFE7A /* ThemeChoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChoiceCell.swift; sourceTree = "<group>"; };
+		38D4FF71231508E7005AFE7A /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
+		38D4FF732315096F005AFE7A /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
+		38D4FF7723150A6A005AFE7A /* RecommendData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RecommendData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +302,7 @@
 				38C06DF92313D12E009A0CF3 /* MemberStoreData.json */,
 				38D4FF602314CAF3005AFE7A /* BestSaleData.json */,
 				38D4FF6C2314DF8D005AFE7A /* ThemeChoiceData.json */,
+				38D4FF7723150A6A005AFE7A /* RecommendData.json */,
 			);
 			path = TMData;
 			sourceTree = "<group>";
@@ -336,6 +343,7 @@
 		38C06D81230FED3C009A0CF3 /* HomeViews */ = {
 			isa = PBXGroup;
 			children = (
+				38D4FF70231508D7005AFE7A /* Recommend */,
 				38D4FF672314DB44005AFE7A /* ThemeChoice */,
 				38D4FF622314D2D0005AFE7A /* HotSearch */,
 				38D4FF572314C7B6005AFE7A /* BestSale */,
@@ -475,6 +483,15 @@
 			path = ThemeChoice;
 			sourceTree = "<group>";
 		};
+		38D4FF70231508D7005AFE7A /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				38D4FF71231508E7005AFE7A /* RecommendView.swift */,
+				38D4FF732315096F005AFE7A /* RecommendCell.swift */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -567,6 +584,7 @@
 				38C06DD723138055009A0CF3 /* TB1OHReSY2pK1RjSZFsXXaNlXXa.png in Resources */,
 				38C06DFA2313D12E009A0CF3 /* MemberStoreData.json in Resources */,
 				38C06DE123138055009A0CF3 /* hotsearchtop.png in Resources */,
+				38D4FF7823150A6A005AFE7A /* RecommendData.json in Resources */,
 				38C06DF32313C5CC009A0CF3 /* CategoryBottomData.json in Resources */,
 				38C06DC723138055009A0CF3 /* yanchu.png in Resources */,
 				38C06DCB23138055009A0CF3 /* category2.png in Resources */,
@@ -611,6 +629,8 @@
 				38C06DF82313D0E0009A0CF3 /* MemberStoreBottomView.swift in Sources */,
 				38D4FF6F2314F922005AFE7A /* ThemeChoiceCell.swift in Sources */,
 				38C06DF52313C978009A0CF3 /* MemberStoreView.swift in Sources */,
+				38D4FF72231508E7005AFE7A /* RecommendView.swift in Sources */,
+				38D4FF742315096F005AFE7A /* RecommendCell.swift in Sources */,
 				38C06D6B230FC0DE009A0CF3 /* Data.swift in Sources */,
 				38C06DEF2313C567009A0CF3 /* CategoryBottomView.swift in Sources */,
 				380E8C3C2313DC5900A814D9 /* FlashSaleView.swift in Sources */,

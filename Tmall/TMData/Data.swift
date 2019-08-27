@@ -32,6 +32,10 @@ let BestSaleData: [BestSaleItem] = load("BestSaleData.json")
 /// 天猫主题精选数据
 let themeChoiceData: [ThemeChoiceItem] = load("ThemeChoiceData.json")
 
+
+/// 猜你喜欢
+let recommendData: [RecommendItem] = load("RecommendData.json")
+
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data
     
