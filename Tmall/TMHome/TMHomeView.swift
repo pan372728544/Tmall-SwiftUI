@@ -59,7 +59,7 @@ struct TMHomeView: View {
                 /// 背景颜色
                 .background(Color(red: 238/255.0, green: 238/255.0, blue: 238/255.0))
                 /// 延伸到安全区域
-                .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.top)
             
         }
 
