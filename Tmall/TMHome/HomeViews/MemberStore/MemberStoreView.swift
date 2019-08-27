@@ -19,7 +19,7 @@ struct MemberStoreView: View {
               VStack(alignment: .center, spacing: 0) {
                 HStack(alignment: .center, spacing: 5) {
                     Text("天猫会员店")
-                        .font(.system(size: 18, weight: .black, design: .default))
+                        .font(.system(size: 16, weight: .bold, design: .default))
                         .foregroundColor(.black)
                     Text("天天平价")
                         .font(Font.system(size: 14))

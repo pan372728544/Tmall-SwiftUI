@@ -26,6 +26,8 @@ let categoryBottomData: [CategoryBottomItem] = load("CategoryBottomData.json")
 /// 天猫会员店数据底部数据
 let memberStoreBottomData: [MemberStoreBottomItem] = load("MemberStoreData.json")
 
+/// 天猫榜单数据
+let BestSaleData: [BestSaleItem] = load("BestSaleData.json")
 
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
