@@ -52,6 +52,8 @@ struct CategoryItem: Hashable, Codable, Identifiable {
     
     var category: String
     
+    var html: String
+    
 
 }
 

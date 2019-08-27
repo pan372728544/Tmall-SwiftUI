@@ -28,9 +28,13 @@ struct MemberStoreView: View {
                         .font(Font.system(size: 14))
                         .foregroundColor(Color(red: 133/255.0, green: 133/255.0, blue: 133/255.0))
                     Spacer()
-                    Text("进店逛逛")
-                        .font(Font.system(size: 14))
-                        .foregroundColor(.gray)
+                   
+                    
+                    NavigationLink(destination: BestSaleView()) {
+                        Text("进店逛逛")
+                            .font(Font.system(size: 14))
+                            .foregroundColor(.gray)
+                    }
                     Image("alu_tables_arrow")
                     .resizable()
                         .frame(width: 10, height: 10)

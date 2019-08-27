@@ -24,7 +24,9 @@ struct CategoryTopView: View {
                    ForEach(categorys, id: \.self) { category in
                        /// 单个视图
                        CategorySingle(category: category)
-                           .frame(width: 75, height: 70, alignment: .topLeading)
+                           .frame(width: 75, height: 70, alignment: .center)
+                        .background(Color.clear)
+                    
 
 
                        
@@ -38,27 +40,33 @@ struct CategoryTopView: View {
 }
 
 struct CategorySingle: View {
-      // 分类模型数据
-      var category: CategoryItem
-      
-      
-      var body: some View {
-          VStack {   // 垂直布局
-
-             /// 分类图片
-              Image(category.imageName)
-                  .resizable()
-                  .frame(width: 50, height: 50)
-                  .clipShape(Circle())
-              
-              /// 分类名称
-              Text(category.category)
-                  .font(.system(size: 11))
-                  .foregroundColor(.gray)
-        
-
-          }
-      }
+    // 分类模型数据
+    var category: CategoryItem
+    
+    
+    var body: some View {
+        ZStack {   // 垂直布局
+            /// 分类图片
+            Image(category.imageName)
+                .resizable()
+                .frame(width: 50, height: 50)
+                .clipShape(Circle())
+                .padding(.top,-15)
+            
+            NavigationLink(destination: WebContainView(html: category.html)) {
+                /// 分类名称
+                Text(self.category.category)
+                    .padding(.top,50)
+                    .frame(height:70)
+                    .font(.system(size: 11))
+                    .foregroundColor(.gray)
+                    .background(Color.clear)
+            }
+            
+            
+            
+        }
+    }
 }
 
 #if DEBUG

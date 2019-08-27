@@ -12,19 +12,20 @@ struct ContentView: View {
     @State private var showGreeting = true
 
       var body: some View {
-           GeometryReader { geometry in
-               HStack(spacing: 0) {
-                   Text("Left")
-                       .frame(width: geometry.size.width / 2, height: 50)
-                       .background(Color.yellow)
-                   Text("Right")
-                       .frame(width: geometry.size.width / 2, height: 50)
-                       .background(Color.orange)
-               }
-           }
-       }
+             NavigationView {
+                 VStack {
+                     NavigationLink(destination: DetailView()) {
+                         Text("Show Detail View")
+                     }.navigationBarTitle("Navigation")
+                 }
+             }
+         }
 }
-
+struct DetailView: View {
+    var body: some View {
+        Text("This is the detail view")
+    }
+}
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

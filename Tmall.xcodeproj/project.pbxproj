@@ -106,6 +106,8 @@
 		38D4FF72231508E7005AFE7A /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF71231508E7005AFE7A /* RecommendView.swift */; };
 		38D4FF742315096F005AFE7A /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF732315096F005AFE7A /* RecommendCell.swift */; };
 		38D4FF7823150A6A005AFE7A /* RecommendData.json in Resources */ = {isa = PBXBuildFile; fileRef = 38D4FF7723150A6A005AFE7A /* RecommendData.json */; };
+		38D4FF7B2315330A005AFE7A /* TmallMarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF7A2315330A005AFE7A /* TmallMarketView.swift */; };
+		38D4FF7D2315349D005AFE7A /* WebContainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D4FF7C2315349D005AFE7A /* WebContainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -211,6 +213,8 @@
 		38D4FF71231508E7005AFE7A /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
 		38D4FF732315096F005AFE7A /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
 		38D4FF7723150A6A005AFE7A /* RecommendData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RecommendData.json; sourceTree = "<group>"; };
+		38D4FF7A2315330A005AFE7A /* TmallMarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmallMarketView.swift; sourceTree = "<group>"; };
+		38D4FF7C2315349D005AFE7A /* WebContainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +347,7 @@
 		38C06D81230FED3C009A0CF3 /* HomeViews */ = {
 			isa = PBXGroup;
 			children = (
+				38D4FF79231532DE005AFE7A /* SuperMarket */,
 				38D4FF70231508D7005AFE7A /* Recommend */,
 				38D4FF672314DB44005AFE7A /* ThemeChoice */,
 				38D4FF622314D2D0005AFE7A /* HotSearch */,
@@ -490,6 +495,15 @@
 				38D4FF732315096F005AFE7A /* RecommendCell.swift */,
 			);
 			path = Recommend;
+			sourceTree = "<group>";
+		};
+		38D4FF79231532DE005AFE7A /* SuperMarket */ = {
+			isa = PBXGroup;
+			children = (
+				38D4FF7A2315330A005AFE7A /* TmallMarketView.swift */,
+				38D4FF7C2315349D005AFE7A /* WebContainView.swift */,
+			);
+			path = SuperMarket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -653,12 +667,14 @@
 				38C06D87230FEE81009A0CF3 /* PageControl.swift in Sources */,
 				38C06D85230FEE72009A0CF3 /* PageView.swift in Sources */,
 				38D4FF692314DB51005AFE7A /* ThemeChoiceView.swift in Sources */,
+				38D4FF7D2315349D005AFE7A /* WebContainView.swift in Sources */,
 				38D4FF642314D2DE005AFE7A /* HotSearchView.swift in Sources */,
 				38C06D80230FEAF9009A0CF3 /* HomeNaviView.swift in Sources */,
 				38C06D6F230FC214009A0CF3 /* TabBarItem.swift in Sources */,
 				38C06D68230FB89F009A0CF3 /* TMTabBarView.swift in Sources */,
 				38C06D71230FC7A5009A0CF3 /* TMCatView.swift in Sources */,
 				38C06DE42313A300009A0CF3 /* PageViewBackColorView.swift in Sources */,
+				38D4FF7B2315330A005AFE7A /* TmallMarketView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct HomeNaviView: View {
+    
+    @State private var name: String = ""
+    
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 0) {
             
             /// 顶部安全区域
             Color.clear
@@ -26,13 +29,10 @@ struct HomeNaviView: View {
                     
                     Image("iconfont-search")
                         .padding(EdgeInsets(top: 7, leading: 5, bottom: 8, trailing: 5))
-                    Text("智能家居HongMeng")
-                        .font(Font.system(size: 14))
-                        .foregroundColor(Color.gray)
-                    
-                    Spacer()
+                    TextField("智能家居HongMeng", text: $name)
                     Image("tmas_entry_pop_icon")
                         .padding(EdgeInsets(top: 7, leading: 5, bottom: 8, trailing: 5))
+                    
                     
                 }
                 .background(
@@ -51,7 +51,6 @@ struct HomeNaviView: View {
             }
                 
             .background(Color.clear)
-            .offset(x: 0, y: -50)
         }
         
     }
