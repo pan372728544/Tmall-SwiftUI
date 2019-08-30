@@ -60,7 +60,7 @@ struct HomeNaviView: View {
 #if DEBUG
 struct HomeNaviView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeNaviView()
+        HomeNaviView().environmentObject(HomeGlobal())
     }
 }
 #endif

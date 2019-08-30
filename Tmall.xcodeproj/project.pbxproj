@@ -253,6 +253,22 @@
 			path = RefreshScrollView;
 			sourceTree = "<group>";
 		};
+		38B74023231926CA008EDE33 /* HomeBack */ = {
+			isa = PBXGroup;
+			children = (
+				38B73FFF2318D040008EDE33 /* TMHomeBackView.swift */,
+			);
+			path = HomeBack;
+			sourceTree = "<group>";
+		};
+		38B74024231926DC008EDE33 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				38C06D65230FB885009A0CF3 /* TMHomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		38C06D42230F897B009A0CF3 = {
 			isa = PBXGroup;
 			children = (
@@ -346,8 +362,6 @@
 			isa = PBXGroup;
 			children = (
 				38C06D81230FED3C009A0CF3 /* HomeViews */,
-				38C06D65230FB885009A0CF3 /* TMHomeView.swift */,
-				38B73FFF2318D040008EDE33 /* TMHomeBackView.swift */,
 			);
 			path = TMHome;
 			sourceTree = "<group>";
@@ -363,6 +377,8 @@
 		38C06D81230FED3C009A0CF3 /* HomeViews */ = {
 			isa = PBXGroup;
 			children = (
+				38B74024231926DC008EDE33 /* Home */,
+				38B74023231926CA008EDE33 /* HomeBack */,
 				38B73FF82318C8E9008EDE33 /* RefreshScrollView */,
 				38D4FF79231532DE005AFE7A /* SuperMarket */,
 				38D4FF70231508D7005AFE7A /* Recommend */,
