@@ -14,13 +14,13 @@ struct LoopCardView: View {
     var body: some View {
  
         ZStack {
-            Color(.clear).frame(height: 240, alignment: .center)
+            Color(.clear).frame(height: 260, alignment: .center)
             
             loop.featureImage?
                 .resizable()
                 .frame(height: 150)
                 .cornerRadius(10)
-             .padding(.init(top: 380, leading: 10, bottom: 0, trailing: 10))
+             .padding(.init(top: 100, leading: 10, bottom: 0, trailing: 10))
         }
         
      

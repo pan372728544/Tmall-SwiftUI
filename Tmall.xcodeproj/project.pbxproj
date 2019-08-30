@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		380E8C3C2313DC5900A814D9 /* FlashSaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E8C3B2313DC5900A814D9 /* FlashSaleView.swift */; };
 		380E8C3E2313DEA800A814D9 /* FlashSaleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E8C3D2313DEA800A814D9 /* FlashSaleCellView.swift */; };
+		38B73FFA2318C914008EDE33 /* RefreshScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B73FF92318C914008EDE33 /* RefreshScrollView.swift */; };
+		38B73FFC2318CE05008EDE33 /* HomeGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B73FFB2318CE05008EDE33 /* HomeGlobal.swift */; };
+		38B740002318D040008EDE33 /* TMHomeBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B73FFF2318D040008EDE33 /* TMHomeBackView.swift */; };
 		38C06D4F230F897B009A0CF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C06D4E230F897B009A0CF3 /* AppDelegate.swift */; };
 		38C06D51230F897B009A0CF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C06D50230F897B009A0CF3 /* SceneDelegate.swift */; };
 		38C06D53230F897B009A0CF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C06D52230F897B009A0CF3 /* ContentView.swift */; };
@@ -113,6 +116,9 @@
 /* Begin PBXFileReference section */
 		380E8C3B2313DC5900A814D9 /* FlashSaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleView.swift; sourceTree = "<group>"; };
 		380E8C3D2313DEA800A814D9 /* FlashSaleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleCellView.swift; sourceTree = "<group>"; };
+		38B73FF92318C914008EDE33 /* RefreshScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshScrollView.swift; sourceTree = "<group>"; };
+		38B73FFB2318CE05008EDE33 /* HomeGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGlobal.swift; sourceTree = "<group>"; };
+		38B73FFF2318D040008EDE33 /* TMHomeBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMHomeBackView.swift; sourceTree = "<group>"; };
 		38C06D4B230F897B009A0CF3 /* Tmall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tmall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C06D4E230F897B009A0CF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38C06D50230F897B009A0CF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +244,15 @@
 			path = FlashSale;
 			sourceTree = "<group>";
 		};
+		38B73FF82318C8E9008EDE33 /* RefreshScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				38B73FF92318C914008EDE33 /* RefreshScrollView.swift */,
+				38B73FFB2318CE05008EDE33 /* HomeGlobal.swift */,
+			);
+			path = RefreshScrollView;
+			sourceTree = "<group>";
+		};
 		38C06D42230F897B009A0CF3 = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +347,7 @@
 			children = (
 				38C06D81230FED3C009A0CF3 /* HomeViews */,
 				38C06D65230FB885009A0CF3 /* TMHomeView.swift */,
+				38B73FFF2318D040008EDE33 /* TMHomeBackView.swift */,
 			);
 			path = TMHome;
 			sourceTree = "<group>";
@@ -347,6 +363,7 @@
 		38C06D81230FED3C009A0CF3 /* HomeViews */ = {
 			isa = PBXGroup;
 			children = (
+				38B73FF82318C8E9008EDE33 /* RefreshScrollView */,
 				38D4FF79231532DE005AFE7A /* SuperMarket */,
 				38D4FF70231508D7005AFE7A /* Recommend */,
 				38D4FF672314DB44005AFE7A /* ThemeChoice */,
@@ -658,7 +675,10 @@
 				38C06D73230FC7C3009A0CF3 /* TMStoreView.swift in Sources */,
 				38C06D53230F897B009A0CF3 /* ContentView.swift in Sources */,
 				380E8C3E2313DEA800A814D9 /* FlashSaleCellView.swift in Sources */,
+				38B73FFC2318CE05008EDE33 /* HomeGlobal.swift in Sources */,
 				38C06D64230FB62B009A0CF3 /* TMTabBarViewController.swift in Sources */,
+				38B73FFA2318C914008EDE33 /* RefreshScrollView.swift in Sources */,
+				38B740002318D040008EDE33 /* TMHomeBackView.swift in Sources */,
 				38D4FF662314D5CD005AFE7A /* HotSearchCell.swift in Sources */,
 				38C06D89230FEEC0009A0CF3 /* LoopCardView.swift in Sources */,
 				38C06D75230FC7D7009A0CF3 /* TMMineView.swift in Sources */,

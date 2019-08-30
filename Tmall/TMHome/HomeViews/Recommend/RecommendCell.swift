@@ -43,17 +43,17 @@ struct RecommendCellBackGroundView: View {
                     Color(.white)
                         .frame(width: (geometry.size.width - 40)/2, height: 280, alignment: .center)
                         .cornerRadius(10)
-                        .shadow(radius: 10)
+                        .shadow(color: Color(red: 237/255.0, green: 237/255.0, blue: 237/255.0), radius: 5)
                     
                     Color(.white)
                         .frame(width: (geometry.size.width - 40)/2, height: 280, alignment: .center)
                         .cornerRadius(10)
-                        .shadow(radius: 4)
+                        .shadow(color: Color(red: 237/255.0, green: 237/255.0, blue: 237/255.0), radius: 5)
                 }
             }
-
+            
         }
- 
+        
     }
     
 }

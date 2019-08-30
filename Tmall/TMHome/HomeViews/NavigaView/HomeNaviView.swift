@@ -10,13 +10,14 @@ import SwiftUI
 
 struct HomeNaviView: View {
     
+    @EnvironmentObject var home: HomeGlobal
     @State private var name: String = ""
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             
             /// 顶部安全区域
-            Color.clear
+            Color.init(UIColor(red: 255/255.0, green: 48/255.0, blue: 48/255.0, alpha: (-self.home.offsetY)/94.0))
                 .frame(height: 44)
             
             /// 底部导航栏
@@ -50,7 +51,7 @@ struct HomeNaviView: View {
                 
             }
                 
-            .background(Color.clear)
+            .background(Color.init(UIColor(red: 255/255.0, green: 48/255.0, blue: 48/255.0, alpha: (-self.home.offsetY)/94.0)))
         }
         
     }
