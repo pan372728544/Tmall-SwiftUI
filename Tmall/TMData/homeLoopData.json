@@ -22,21 +22,21 @@
     {
         "imgName": "loop3",
         "id": 3,
-        "bgColor": "#FEEEEA",
+        "bgColor": "#FE9A3B",
         "colors": {
             "red": 254,
-            "green": 238,
-            "blue": 234
+            "green": 154,
+            "blue": 59
         }
     },
     {
         "imgName": "loop4",
         "id": 4,
-        "bgColor": "#A9A7B2",
+        "bgColor": "#5590FF",
         "colors": {
-            "red": 169,
-            "green": 167,
-            "blue": 178
+            "red": 85,
+            "green": 144,
+            "blue": 255
         }
     },
     {
