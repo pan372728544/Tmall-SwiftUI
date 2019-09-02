@@ -64,6 +64,8 @@ struct TMHomeBackView: View {
         let nextColor: (r : CGFloat, g : CGFloat, b : CGFloat)
             = getRGBWithColor(getRGB(nextIndex))
 
+        print("\(currentColor)==\(nextColor)")
+        
         /// 颜色变量
         let colorDelta = (currentColor.0 - nextColor.0, currentColor.1 - nextColor.1, currentColor.2 - nextColor.2)
         
