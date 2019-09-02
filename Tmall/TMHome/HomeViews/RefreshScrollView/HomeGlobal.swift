@@ -20,4 +20,10 @@ public class HomeGlobal: ObservableObject {
     /// 首页滚动的index
     @Published var index: Int = 0
     
+    /// 整体宽度
+    @Published var width: CGFloat = 0.0
+    
+    /// 分类滑动的x轴偏移量
+    @Published var categoryX: CGFloat = 0.0
+    
 }

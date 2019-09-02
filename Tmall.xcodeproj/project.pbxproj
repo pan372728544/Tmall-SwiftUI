@@ -12,6 +12,8 @@
 		38B73FFA2318C914008EDE33 /* RefreshScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B73FF92318C914008EDE33 /* RefreshScrollView.swift */; };
 		38B73FFC2318CE05008EDE33 /* HomeGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B73FFB2318CE05008EDE33 /* HomeGlobal.swift */; };
 		38B740002318D040008EDE33 /* TMHomeBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B73FFF2318D040008EDE33 /* TMHomeBackView.swift */; };
+		38B74026231CA60D008EDE33 /* TMPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B74025231CA60D008EDE33 /* TMPageView.swift */; };
+		38B74028231CB282008EDE33 /* TMScroIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B74027231CB282008EDE33 /* TMScroIndicator.swift */; };
 		38C06D4F230F897B009A0CF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C06D4E230F897B009A0CF3 /* AppDelegate.swift */; };
 		38C06D51230F897B009A0CF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C06D50230F897B009A0CF3 /* SceneDelegate.swift */; };
 		38C06D53230F897B009A0CF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C06D52230F897B009A0CF3 /* ContentView.swift */; };
@@ -119,6 +121,8 @@
 		38B73FF92318C914008EDE33 /* RefreshScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshScrollView.swift; sourceTree = "<group>"; };
 		38B73FFB2318CE05008EDE33 /* HomeGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGlobal.swift; sourceTree = "<group>"; };
 		38B73FFF2318D040008EDE33 /* TMHomeBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMHomeBackView.swift; sourceTree = "<group>"; };
+		38B74025231CA60D008EDE33 /* TMPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMPageView.swift; sourceTree = "<group>"; };
+		38B74027231CB282008EDE33 /* TMScroIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMScroIndicator.swift; sourceTree = "<group>"; };
 		38C06D4B230F897B009A0CF3 /* Tmall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tmall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C06D4E230F897B009A0CF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38C06D50230F897B009A0CF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +253,8 @@
 			children = (
 				38B73FF92318C914008EDE33 /* RefreshScrollView.swift */,
 				38B73FFB2318CE05008EDE33 /* HomeGlobal.swift */,
+				38B74025231CA60D008EDE33 /* TMPageView.swift */,
+				38B74027231CB282008EDE33 /* TMScroIndicator.swift */,
 			);
 			path = RefreshScrollView;
 			sourceTree = "<group>";
@@ -678,6 +684,7 @@
 				38C06DF52313C978009A0CF3 /* MemberStoreView.swift in Sources */,
 				38D4FF72231508E7005AFE7A /* RecommendView.swift in Sources */,
 				38D4FF742315096F005AFE7A /* RecommendCell.swift in Sources */,
+				38B74026231CA60D008EDE33 /* TMPageView.swift in Sources */,
 				38C06D6B230FC0DE009A0CF3 /* Data.swift in Sources */,
 				38C06DEF2313C567009A0CF3 /* CategoryBottomView.swift in Sources */,
 				380E8C3C2313DC5900A814D9 /* FlashSaleView.swift in Sources */,
@@ -701,6 +708,7 @@
 				38C06D66230FB885009A0CF3 /* TMHomeView.swift in Sources */,
 				38D4FF592314C7C3005AFE7A /* BestSaleView.swift in Sources */,
 				38C06D87230FEE81009A0CF3 /* PageControl.swift in Sources */,
+				38B74028231CB282008EDE33 /* TMScroIndicator.swift in Sources */,
 				38C06D85230FEE72009A0CF3 /* PageView.swift in Sources */,
 				38D4FF692314DB51005AFE7A /* ThemeChoiceView.swift in Sources */,
 				38D4FF7D2315349D005AFE7A /* WebContainView.swift in Sources */,

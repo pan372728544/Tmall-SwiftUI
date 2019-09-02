@@ -30,16 +30,20 @@ struct PageView<Page: View>: View {
 
     var body: some View {
         
-        ZStack(alignment: .top) {
+        ZStack(alignment: .bottom) {
             
             /// 滑动控制器视图
             PageViewController(currentPage: $currentPage, controllers: viewControllers)
                 .background(Color.clear)
                 .frame(height: 260)
             
-            /// 页数标示
-            PageControl(numberOfPages: viewControllers.count, currentPage: $currentPage).padding(.top,220)
+            Text("")
                 .preference(key: PageKeyTypes.PreKey.self, value: [PageKeyTypes.PreData(index: currentPage)])
+            /// 页数标示
+//            PageControl(numberOfPages: viewControllers.count, currentPage: $currentPage).padding(.top,220)
+
+            /// 新修改页数指示
+            TMPageView().padding()
       
             
         }.onPreferenceChange(PageKeyTypes.PreKey.self) { values in

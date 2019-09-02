@@ -13,14 +13,16 @@ struct CategoryView: View {
         
         ZStack(alignment: .top) {
             Image("floor2")
-              .resizable()
-              .frame(height: 180)
-            VStack(alignment: .center, spacing: 15) {
+                .resizable()
+                .frame(height: 180)
+            VStack(alignment: .center, spacing: 4) {
                 CategoryTopView()
+                TMScroIndicator()
+                    .padding(.leading,-10)
                 CategoryBottomView()
-                
-            }
 
+            }
+            
         }
   
         
@@ -30,7 +32,7 @@ struct CategoryView: View {
 #if DEBUG
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryView()
+        CategoryView().environmentObject(HomeGlobal())
     }
 }
 #endif

@@ -45,6 +45,8 @@ struct RefreshScrollView<Content>: View  where Content : View {
                 self.home.offsetX = values.first?.bounds.origin.x ?? 0.0
                 
                 self.home.offsetY = values.first?.bounds.origin.y ?? 0.0
+                
+                self.home.width = values.first?.bounds.size.width ?? 0.0
             }
         }
     }

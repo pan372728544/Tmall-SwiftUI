@@ -32,12 +32,12 @@ struct TMHomeView: View {
                 
                 /// 顶部导航
                 HomeNaviView()
-                
+ 
             }
                 /// 背景颜色
                 .background(Color(red: 245/255.0, green: 245/255.0, blue: 245/255.0))
                 /// 延伸到安全区域
-                .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.top)
                 .navigationBarHidden(true)
         }
         
