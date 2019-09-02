@@ -54,22 +54,22 @@ struct HomeContentView: View {
             
             /// 分类
             CategoryView().padding(.top,0)
-            
+
             /// 天猫会员店
             MemberStoreView().padding(.top,-20)
-            
+
             /// 限时抢购
             FlashSaleView().padding(.top,-20)
-            
+
             /// 天猫榜单
             BestSaleView().padding(.top,-10)
-            
+
             /// 热搜榜
             HotSearchView()
-            
+
             /// 主题精选
             ThemeChoiceView()
-            
+
             /// 猜你喜欢
             RecommendView()
         }

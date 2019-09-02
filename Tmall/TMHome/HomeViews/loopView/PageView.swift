@@ -13,8 +13,12 @@ struct PageView<Page: View>: View {
     @EnvironmentObject var home: HomeGlobal
     var viewControllers: [UIHostingController<Page>] = [UIHostingController<Page>]()
     
+    /// 当前页
     @State var currentPage = 0
-
+    
+    /// 当前页的滚动x轴距离
+    @State var offsetX: CGFloat = 0.0
+    
     init(_ views: [Page]) {
         
         //          self.viewControllers = views.map { UIHostingController(rootView: $0) }
@@ -27,30 +31,28 @@ struct PageView<Page: View>: View {
         }
         
     }
-
+    
     var body: some View {
         
         ZStack(alignment: .bottom) {
             
             /// 滑动控制器视图
-            PageViewController(currentPage: $currentPage, controllers: viewControllers)
+            PageViewController(currentPage: $currentPage, offsetX: $offsetX, home: self.home, controllers: viewControllers)
                 .background(Color.clear)
                 .frame(height: 260)
             
             Text("")
-                .preference(key: PageKeyTypes.PreKey.self, value: [PageKeyTypes.PreData(index: currentPage)])
-            /// 页数标示
-//            PageControl(numberOfPages: viewControllers.count, currentPage: $currentPage).padding(.top,220)
-
+                .preference(key: PageKeyTypes.PreKey.self, value: [PageKeyTypes.PreData(index: currentPage,offsetX: offsetX)])
+            
             /// 新修改页数指示
             TMPageView().padding()
-      
+            
             
         }.onPreferenceChange(PageKeyTypes.PreKey.self) { values in
             self.home.index = values.first?.index ?? 0
         }
     }
-
+    
 }
 
 /// preference类型
@@ -59,6 +61,7 @@ struct PageKeyTypes {
     /// preference 的value 类型
     struct PreData: Equatable{
         let index: Int
+        let offsetX: CGFloat
 
     }
     /// preference 的 key

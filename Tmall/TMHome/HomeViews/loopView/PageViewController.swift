@@ -15,27 +15,45 @@ struct PageViewController: UIViewControllerRepresentable
     /// 当前页
     @Binding var currentPage: Int
     
+    /// 当前页偏移量
+    @Binding var offsetX: CGFloat
+
+    /// 传递过来的首页全局数据
+    var home: HomeGlobal
+    
     var controllers: [UIViewController]
     func makeUIViewController(context: UIViewControllerRepresentableContext<PageViewController>) -> UIPageViewController {
-          let pageViewController = UIPageViewController(
-                         transitionStyle: .scroll,
-                         navigationOrientation: .horizontal,options: [:])
+        let pageViewController = UIPageViewController(
+            transitionStyle: .scroll,
+            navigationOrientation: .horizontal,options: [:])
         pageViewController.dataSource = context.coordinator
         pageViewController.delegate = context.coordinator
-    
-                     return pageViewController
+
+          /// 获取page内的scrollView
+        let scrol = findScrollView(vc: pageViewController)
+        scrol.delegate = context.coordinator
+        return pageViewController
     }
     
     func updateUIViewController(_ uiViewController: UIPageViewController, context: UIViewControllerRepresentableContext<PageViewController>) {
         uiViewController.setViewControllers([controllers[currentPage]], direction: .forward, animated: true, completion: nil)
     }
     
+    func findScrollView(vc: UIPageViewController) -> UIScrollView {
+        for item in vc.view!.subviews {
+            if item is UIScrollView {
+                return item as! UIScrollView
+            }
+        }
+        return UIScrollView()
+    }
     
-    class Coordinator: NSObject,UIPageViewControllerDataSource,UIPageViewControllerDelegate {
+    class Coordinator: NSObject,UIPageViewControllerDataSource,UIPageViewControllerDelegate,UIScrollViewDelegate {
         var parent: PageViewController
-        
-        init(_ pageViewController: PageViewController) {
+        var home: HomeGlobal
+        init(_ pageViewController: PageViewController,home: HomeGlobal) {
             self.parent = pageViewController
+            self.home = home
         }
         
         /// 数据源代理
@@ -71,10 +89,15 @@ struct PageViewController: UIViewControllerRepresentable
                 
             }
         }
+        
+        /// 监听滚动视图距离
+        func scrollViewDidScroll(_ scrollView: UIScrollView) {
+            self.home.offsetX = scrollView.contentOffset.x
+        }
     }
     
     func makeCoordinator() -> PageViewController.Coordinator {
-        Coordinator(self)
+        Coordinator(self, home: self.home)
     }
   
     

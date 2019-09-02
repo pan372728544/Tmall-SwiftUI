@@ -2,52 +2,102 @@
     {
         "imgName": "loop1",
         "id": 1,
-        "bgColor": "#C0C0C0"
+        "bgColor": "#C0C0C0",
+        "colors": {
+            "red": 192,
+            "green": 192,
+            "blue": 192
+        }
     },
     {
         "imgName": "loop2",
         "id": 2,
-        "bgColor": "#000000"
+        "bgColor": "#000000",
+        "colors": {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+        }
     },
     {
         "imgName": "loop3",
         "id": 3,
-        "bgColor": "#FEEEEA"
+        "bgColor": "#FEEEEA",
+        "colors": {
+            "red": 254,
+            "green": 238,
+            "blue": 234
+        }
     },
     {
         "imgName": "loop4",
         "id": 4,
-        "bgColor": "#A9A7B2"
+        "bgColor": "#A9A7B2",
+        "colors": {
+            "red": 169,
+            "green": 167,
+            "blue": 178
+        }
     },
     {
         "imgName": "loop5",
         "id": 5,
-        "bgColor": "#DAFFF8"
+        "bgColor": "#DAFFF8",
+        "colors": {
+            "red": 218,
+            "green": 255,
+            "blue": 248
+        }
     },
     {
         "imgName": "loop6",
         "id": 6,
-        "bgColor": "#E9E1FF"
+        "bgColor": "#E9E1FF",
+        "colors": {
+            "red": 233,
+            "green": 225,
+            "blue": 255
+        }
     },
     {
         "imgName": "loop7",
         "id": 7,
-        "bgColor": "#52EAAF"
+        "bgColor": "#52EAAF",
+        "colors": {
+            "red": 82,
+            "green": 234,
+            "blue": 175
+        }
     },
     {
         "imgName": "loop8",
         "id": 8,
-        "bgColor": "#A4EABD"
+        "bgColor": "#A4EABD",
+        "colors": {
+            "red": 164,
+            "green": 234,
+            "blue": 189
+        }
     },
     {
         "imgName": "loop9",
         "id": 9,
-        "bgColor": "#FFC84D"
+        "bgColor": "#FFC84D",
+        "colors": {
+            "red": 255,
+            "green": 200,
+            "blue": 77
+        }
     },
     {
         "imgName": "loop10",
         "id": 10,
-        "bgColor": "#69C84E"
+        "bgColor": "#69C84E",
+        "colors": {
+            "red": 105,
+            "green": 200,
+            "blue": 78
+        }
     }
 ]
-
+ 

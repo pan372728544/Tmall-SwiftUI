@@ -30,7 +30,7 @@ struct CategoryTopView: View {
                         CategorySingle(category: category)
                             .frame(width: 75, height: 70, alignment: .center)
                             .background(Color.clear)
-                    }
+                        }
                 }
                 
             }.padding(.init(top: 15, leading: 15, bottom: 0, trailing: 15))
@@ -39,6 +39,9 @@ struct CategoryTopView: View {
                     /// 更新赋值
                     self.home.categoryX = CGFloat((values.first?.bounds.origin.x ?? 0.0) - 15.0)
                     print(self.home.categoryX)
+                    if self.home.categoryX < -140 {
+                        
+                    }
             }
                 
      

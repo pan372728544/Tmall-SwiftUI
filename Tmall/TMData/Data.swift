@@ -100,6 +100,14 @@ enum TabBarType {
 let colorTM = Color(red: 255/255.0, green: 48/255.0, blue: 48/255.0)
 
 
+func getRGBWithColor(_ color : UIColor) -> (CGFloat, CGFloat, CGFloat) {
+    guard let components = color.cgColor.components else {
+        fatalError("请使用RGB方式赋值颜色")
+    }
+    
+    return (components[0] * 255, components[1] * 255, components[2] * 255)
+}
+
 func UIColorFromRGB(_ color_vaule : String , alpha : CGFloat = 1) -> Color {
     if color_vaule.isEmpty {
         return Color.clear

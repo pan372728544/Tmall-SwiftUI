@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+
+/// 已经不再使用
 struct PageControl: UIViewRepresentable {
     typealias UIViewType = UIPageControl
     

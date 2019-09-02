@@ -41,8 +41,16 @@ struct HomeLoopItem: Hashable, Codable, Identifiable {
         return UIColorFromRGB(bgColor)
     }
 
+    var colors: ColorRGB
 }
 
+struct ColorRGB: Codable,Hashable {
+    var red: CGFloat
+    
+    var green: CGFloat
+    
+    var blue: CGFloat
+}
 
 struct CategoryItem: Hashable, Codable, Identifiable {
     
